@@ -11,9 +11,6 @@
 	<span id="span"></span>
 	<script src="libs/jquery.min.js"></script>
 	<script>
-		$('#span').click(function(){
-			$('#span').empty();
-		});
 		$('#btn1').click(function(){
 			if($('input').val()==""){
 				alert('还没填写内容');
@@ -24,6 +21,9 @@
 		});
 		$('#btn2').click(function() {
 			$('span').empty();
+		});
+		$('#span').click(function(){
+			$('#span').empty();
 		});
 	</script>
 </body>
