@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- 规定了设备的宽度按照逻辑-->
+	<title>Document</title>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			background: #acf;
+			margin: 0;
+			padding: 0;
+		}
+		.card {
+			width: 100%;
+			height: 300px;
+			margin-top: 150px;
+		}
+		.card > div {
+			width: 100%;
+			height: 100%;
+			background-color: #fff;
+			box-shadow: 0px 10px 16px #f4c288;
+		}
+		@media (min-width: 768px) {
+			.card {
+				padding: 20px;
+			}
+			.card > div {
+				border-radius: 10px;
+				background: red;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="card">
+		<div></div>
+	</div>
+</body>
+</html>

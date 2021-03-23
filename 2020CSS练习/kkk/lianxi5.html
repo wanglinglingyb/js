@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.a {
+			width: 200px;
+			height: 200px;
+			margin: 500px;
+			border-radius: 20px 30px;
+			background: red;
+			transition: 5s linear;
+			/* transform-origin: top; */
+		}
+		img {
+			width: 200px;
+			height: 200px;
+			margin: 500px;
+			border-radius: 20px 30px;
+			background: red;
+			transition: 10s linear;
+			/* transform-origin: top; */
+		}
+		.a:hover {
+			transform: translate(50px, 30px);
+		}
+		img:hover {
+			transform: translate(50px, 30px) rotate(19000deg) scale(3,5);
+			/* transform: translate(50px, 30px); */
+			/* transform: scale(3,5); */
+			/* transform: rotate(19000deg); */
+			/* transform-origin:150% 50%; */
+		}
+		body {
+			background: #aaa;
+		}
+		 *{
+           padding:0;
+           margin:0;
+       }
+       .outer{
+           /* margin:100px auto; */
+           width:300px;
+           height:600px;
+           border-radius: 50%;
+           position:relative;
+           background: #fff;
+           border-left:300px solid #000;
+		   /* border-right:300px solid white; */
+		   /* box-shadow:0 0 30px #D3D3D3; */
+       }
+       .outer::before {
+			content:"";
+            position:absolute;
+            display: block;
+            width:100px;
+            height:100px;
+            top:100px;
+            left:-50px;
+            z-index:2;
+            background-color:white;
+            border-radius:50%;
+			box-shadow:0 250px 0 black;
+	   }
+	   .outer::after{
+           width:300px;
+           height:300px;
+           position:absolute;
+		   left:-150px;
+		   display:block;
+		   content:"";
+           z-index:1;
+		   background-color:black;
+		   border-radius:50%;
+		   box-shadow:0 300px 0 white;
+       }
+	</style>
+</head>
+<body>
+	<div class="outer"></div>
+	<div class="a"></div>
+	<img src="a/1.png" alt="">
+</body>
+</html>

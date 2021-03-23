@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>太极图</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color:grey;
+        }
+        .taichi{
+            width: 416px;
+            height: 416px;
+            margin: 50px auto;
+            background-color: brown;
+            box-shadow:black 18px 6px 100px;
+            border-radius: 50%;
+            font-size:0;
+            background-image:linear-gradient(#000 50%,#fff 50%)
+            
+        }
+        .taichi>div{
+            display:inline-block;
+            width: 208px;
+            height: 208px;
+            margin-top: 104px;
+            border-radius: 50%;
+
+        }
+        .left{
+            background-image:radial-gradient(#fff 20%,#000 20%)
+        }
+        .right{
+            background-image:radial-gradient(#000 20%,#fff 20%)
+        }
+    </style>
+</head>
+<body>
+    <div class="taichi">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

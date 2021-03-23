@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>轮播图</title>
+	<style type="text/css">
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		img {
+			border: 0;
+			vertical-align: middle;/* display: block; */
+		}
+		.box {
+			width: 520px;
+			height: 280px;
+			margin: 0 auto;
+			position: relative;
+			overflow: hidden;
+		}
+		.imgs {
+			width: 2600px;
+			height: 280px;
+			position: absolute;
+			left: -520px;
+			top: 0;
+			/* left: 0; */
+		}
+		.imgs li {
+			float: left;
+		}
+		.dots {
+			position: absolute;
+			left: 185px;
+			bottom: 20px;
+			height: 30px;
+			width: 150px;
+			font-size: 0;
+			border-radius: 15px;
+			background: rgba(255,255,255, .3);
+		}
+		.dots span {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin: 5px;
+			font-size: 16px;
+			background: #fff;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+		.dots .act {
+			background: #ff5000;
+		}
+		.arrows span {
+			position: absolute;
+			cursor: pointer;
+			top: 125px;
+			width: 20px;
+			height: 30px;
+			font-size: 20px;
+			text-align: center;
+			background: #fff;
+			color: #000;
+			opacity: 0;
+		}
+		.box:hover .arrows span {
+			opacity: .3;
+		}
+		.box .arrows span:hover {
+			opacity: .7;
+		}
+		.arrows .left {
+			left: 0;
+			border-radius: 0 15px 15px 0;
+		}
+		.arrows .right {
+			right: 0;
+			border-radius: 15px 0 0 15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul class="imgs">
+			<li><a href="#"><img src="../images/1.jpg" alt="1"></a></li>
+			<li><a href="#"><img src="../images/2.jpg" alt="2"></a></li>
+			<li><a href="#"><img src="../images/3.jpg" alt="3"></a></li>
+			<li><a href="#"><img src="../images/4.jpg" alt="4"></a></li>
+			<li><a href="#"><img src="../images/5.jpg" alt="5"></a></li>
+		</ul>
+		<div class="dots">
+			<span></span>
+			<span class="act"></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="arrows">
+			<span class="left">&lt;</span>
+			<span class="right">&gt;</span>
+		</div>
+	</div>
+</body>
+</html>

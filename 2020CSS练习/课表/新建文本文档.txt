@@ -1,0 +1,37 @@
+ CSS    清除浮动造成的影响代码
+.clearfix::after{
+        content:";
+        display:block;
+        clear:both;
+}
+给包含浮动元素的父元素添加class="clearfix"\
+
+CMS快速建站
+1、cms是什么
+CMS，即 Content Management System ，英文缩写是CMS，中文全称是“网站内容管理系统”。
+网站内容管理系统具有许多基于模板的优秀设计，可以加快网站开发的速度和减少开发的成本。
+网站内容管理系统的功能并不只限于文本处理，它也可以处理图片、Flash动画、声像流、图像
+甚至电子邮件档案。网站内容管理系统其实是一个很广泛的称呼，从一般的博客程序，新闻发布
+程序，到综合性的网站管理程序都可以被称为内容管理系统。
+
+2、常见的cms系统：
+php类cms系统：dedecms（织梦CMS) php+myspl）、帝国cms(php+myspl)、、phpcms（php+myspl)
+
+asp类cms系统：zblog、KingCMS等
+
+.net类cms系统：EoyooCMS等
+
+国外的著名cms系统：joomla、WordPress 、magento、drupal 、mambo。
+
+3运行CMS所需要的环境
+1）操作系统  windows 、 linux  
+2）Web服务器（网站服务器）apache  
+3）数据库服务器   MySQL           查询select ...from....wherer   添加 insert  修改update  删除delete	 
+4)PHP解释器（php预处理器)PHP  
+ WAPA或LAMP/LNMP      
+4安装环境
+1、逐项安装
+2、集成环境安装（学习阶段推荐使用此方法） phpStudy
+
+5关闭计算机上原有的MySOL
+计算机管理-服务-找到MySQLxx-禁用并停止-确定

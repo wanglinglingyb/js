@@ -1,0 +1,20 @@
+第一种方法
+在github是创建XXX仓库
+1通过git克隆XXX仓库到本地计算机
+第二种方法
+在本地新建文件夹（仓库）
+在github上创建对应名称仓库（不勾选README），根据页面上的命令进行操作
+
+
+
+git status 这个命令是用来查看当前版本库的状态
+git add . 跟踪新文件
+
+git commit -m ""   提交更新
+git push用于将本地分支的更新，推送到远程主机。
+
+display:inline 表示设置元素为行内元素，行内元素不可以设置宽高。
+display:block 表示设置元素为块级元素，块级元素可以设置宽高。
+display:none 表示隐藏元素，此元素不会被显示。
+display:inline-block 表示设置元素为行内块元素，行内块元素可以设置宽高。
+在JavaScript中，函数名可以作为函数参数传递

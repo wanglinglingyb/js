@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		.clearfix:: {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		/* 清除文本信息 */
+		.notext {
+					text-indent: 100%;/* 首行缩进 */
+					white-space: nowrap;
+					overflow: hidden;
+					/*设置长文本带省略号 white-space: nowrap;
+					text-overflow: ellipsis;
+					overflow: hidden; */
+		}
+		div {
+			width: 500px;
+			height: 50px;
+		}
+		#a1 {
+			background: orange;
+		}
+		#a2 {
+			background: seagreen;
+		}
+		#a3 {
+			background: skyblue;
+		}
+		/*	边框颜色默认为文字颜色 */
+		#a4 {
+			background: gold;
+			height: 100px;
+			border: dotted 5px black;
+		}
+		#a5 {
+			background: red;
+		}
+		.b {
+			height: 50px;
+			width: 200px;
+			float: left;
+		}
+		.b1 {
+			background: cadetblue;
+		}
+		.b2 {
+			background: rebeccapurple;
+		}
+		#a {
+			width: 150px;
+			height: 150px;
+			background: lightgreen;
+			margin: 50px 100px;
+			border: solid 20px;
+			border-color: red orange purple pink;
+		}
+		#b {
+			width: 25px;
+			height: 25px;
+			border: 100px solid;
+			border-color: red orange purple pink;
+			box-shadow: 10px 5px  5px blue;
+			border-radius: 50%;
+			transition: all 15s linear 1s;
+		}
+		#b:hover {
+			height: 100px;
+			width: 100px;
+			color: purple;
+		}
+		#c {
+			width: 100px;
+			height: 100px;
+			margin: 50px 100px;
+			background: lightgrey;
+			border: 10px;
+			border-style: solid dashed dotted;
+			border-color: red green blue purple;
+		}
+		#d {
+			width: 0;
+			height: 0;
+			border: solid;
+			border-top: none;
+			border-width: 150px 300px;
+			border-color: gold transparent;
+		}
+		#e {
+			width: 0;
+			height: 0;
+			border: solid;
+			border-top: none;
+			border-width: 15px 13px;
+			border-color: gold transparent;
+		}
+		#f {
+			width: 50px;
+			height: 15px;
+			background: red;
+			border-radius: 20px;
+		}
+		.g {
+			width: 100px;
+			height: 100px;
+			background: blue;
+			border: 10px dashed red;
+		}
+		.h {
+			width: 100px;
+			height: 100px;
+			background: pink;
+		}
+	</style>
+</head>
+<body>
+	<div id="a1"></div>
+	<div id="a2"></div>
+	<div id="a3"></div>
+	<div id="a4">
+		<div class="b1 b"></div>
+		<div class="b2 b"></div>
+		<div class="b2 b"></div>
+		<div class="b1 b"></div>
+	</div>
+	<div id="a5"></div>
+
+
+
+	<div id="a"></div>
+	<div id="b"></div>
+	<div id="c"></div>
+	<div id="d"></div>
+	<div id="e"></div>
+	<div id="f"></div>
+	<div class="g">
+		<div class="h"></div>
+	</div>
+</body>
+</html>

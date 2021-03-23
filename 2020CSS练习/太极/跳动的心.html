@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>heart</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin:200px auto 0;
+            position: relative;;
+            background-color:rgb(219, 93, 93);
+            transform:rotate(45deg);
+            animation:hhh 1s infinite alternate;
+        }
+        div::before{
+            content: "";
+            display: block;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            background-color:inherit;
+            border-radius: 50%;
+            left: -100px;
+        }
+        div::after{
+            content: "";
+            display: block;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            background-color:inherit;
+            border-radius: 50%;
+            top: -100px;
+        }
+        @keyframes hhh{
+            from{
+               transform: rotate(45deg) scale(1);
+            }
+            to{
+                transform:rotate(45deg) scale(1.5);
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

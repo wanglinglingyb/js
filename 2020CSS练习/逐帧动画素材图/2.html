@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		@keyframes circle {
+			0% {
+				transform: rotateX(0deg) rotateY(0deg);
+			}
+			100% {
+				transform: rotateX(360deg) rotateY(360deg);
+			}
+		}
+		.box {
+			position: absolute;
+			width: 700px;
+			height: 700px;
+			left: 50%;
+			top: 50%;
+			border: solid 1px;
+			transform: translate(-50%,-50%);
+			perspective: 1200px; /* 设置透视值 */
+		}
+		.box1 {
+			width: 100%;
+			height: 100%;
+			transform-style: preserve-3d;
+			/* transform: rotateX(25deg) rotateY(25deg); */
+			animation: circle 10s linear infinite;
+		}
+		.small {
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -100px;
+			margin-left: -100px;
+			background: currentcolor; /* 背景颜色使用文本颜色 */
+		}
+		.small1 {
+			color: red;
+			transform: translateZ(100px);
+		}
+		.small2 {
+			color: blue;
+			transform: rotateY(180deg) translateZ(100px);
+		}
+		.small3 {
+			color: green;
+			transform: rotateX(90deg) translateZ(100px);
+		}
+		.small4 {
+			color: purple;
+			transform: rotateX(-90deg) translateZ(100px);
+		}
+		.small5 {
+			color: pink;
+			transform: rotateY(90deg) translateZ(100px);
+		}
+		.small6 {
+			color: orange;
+			transform: rotateY(-90deg) translateZ(100px);
+		}
+		.box:hover .small {
+			box-shadow: 0 0 10px currentcolor;
+		}
+		.big {
+			width: 400px;
+			height: 400px;
+			/* border: 1px solid; */
+			background: rgba(100, 10, 10, .1);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -200px;
+			margin-left: -200px;
+		}
+		.big1 {
+			transform: translateZ(200px);
+		}
+		.big2 {
+			transform: rotateY(180deg) translateZ(200px);
+		}
+		.big3 {
+			transform: rotateX(90deg) translateZ(200px);
+		}
+		.big4 {
+			transform: rotateX(-90deg) translateZ(200px);
+		}
+		.big5 {
+			transform: rotateY(90deg) translateZ(200px);
+		}
+		.big6 {
+			transform: rotateY(-90deg) translateZ(200px);
+		}
+		.box:hover .big1 {
+			transform: translateZ(300px);
+		}
+		.box:hover .big2 {
+			transform: rotateY(180deg) translateZ(300px);
+		}
+		.box:hover .big3 {
+			transform: rotateX(90deg) translateZ(300px);
+		}
+		.box:hover .big4 {
+			transform: rotateX(-90deg) translateZ(300px);
+		}
+		.box:hover .big5 {
+			transform: rotateY(90deg) translateZ(300px);
+		}
+		.box:hover .big6 {
+			transform: rotateY(-90deg) translateZ(300px);
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="box1">
+			<div class="small small1"></div>
+			<div class="small small2"></div>
+			<div class="small small3"></div>
+			<div class="small small4"></div>
+			<div class="small small5"></div>
+			<div class="small small6"></div>
+			<div class="big big1"></div>
+			<div class="big big2"></div>
+			<div class="big big3"></div>
+			<div class="big big4"></div>
+			<div class="big big5"></div>
+			<div class="big big6"></div>
+		</div>
+	</div>
+</body>
+</html>

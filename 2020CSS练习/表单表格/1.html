@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单</title>
+	<style type="text/css">
+		textarea {
+			resize: none;
+		}
+	</style>
+</head>
+<body>
+	<form action="" method="get">
+		<label for="name">姓名：
+			<input type="text" name="" id="name">
+			<input type="submit" value="保存">
+		</label>
+	</form>
+	<form action="">
+		<p>
+			<label for="in">username</label>
+			<input type="text" id="in" name="username" value="wyb" readonly>
+		</p>
+		<p>
+			<label for="pwd">password</label>
+			<input type="password" id="pwd" name="pwd" value="0805">
+		</p>
+		<p>
+			<input type="radio" name="name" id="1" value="1">
+			<label for="1">Email</label>
+			<input type="radio" name="name" id="2" value="2">
+			<label for="2">phone</label>
+			<input type="radio" name="name" id="3" value="3">
+			<label for="3">Mail</label>
+		</p>
+		<p>
+			<input id="h" type="checkbox" name="hobby" value="1">
+			<label for="h">coding</label>
+			<input id="m" type="checkbox" name="hobby" value="2" checked>
+			<label for="m">music</label>
+			<input id="f" type="checkbox" name="hobby" value="3" disabled>
+			<label for="f">football</label>
+		</p>
+		<p>
+			<label for="jj">person
+				<textarea id="jj" name="jj" rows="5" cols="15">我看着天真我自己，出现在没有我的故事里，等待着我的回忆，一个为何至此的原因</textarea>
+			</label>
+			<select name="geshu" id="geshu">
+				<option value="10">10</option>
+				<option value="20">20</option>
+				<option value="30">30</option>
+			</select>
+		</p>
+		<p>
+			<input type="submit" value="提交">
+			<input type="reset" value="重置">
+		</p>
+	</form>
+</body>
+</html

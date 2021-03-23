@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定位1</title>
+	<style>
+		#box {
+			width: 320px;
+			height: 320px;
+			border: 3px red solid;
+			position: relative;
+		}
+		.boxes {
+			width: 100px;
+			height: 100px;
+			font-size: 14px;
+			background: red;
+			text-align: center;
+			line-height: 100px;
+			position: absolute;
+		}
+		.e {
+			background: blue;
+			color: white;
+			top: 110px;
+			left: 110px;
+		}
+		.a {
+			top: 10px;
+			left:10px;
+		}
+		.b {
+			top: 10px;
+			right: 10px;
+		}
+		.c {
+			left: 10px;
+			bottom: 10px;
+		}
+		.d {
+			right: 10px;
+			bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div class=" boxes a">文字</div>
+		<div class=" boxes b">文字</div>
+		<div class=" boxes c">文字</div>
+		<div class=" boxes d">文字</div>
+		<div class=" boxes e">文字</div>
+	</div>
+</body>
+</html>

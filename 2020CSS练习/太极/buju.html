@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		.clearfix:: {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		/*display: block显示为块元素
+		display: inline显示为内联元素
+		display: inlineblock显示内联块元素
+		display: none不显示
+		*/
+		/*div独占一行 可以设置宽高尺寸 可以设置上下padding margin尺寸*/
+		div {
+			width: 500px;
+			height: 50px;
+			margin: 0 auto;
+		}
+		#a1 {
+			background: orange;
+		}
+		#a2 {
+			background: seagreen;
+		}
+		#a3 {
+			background: skyblue;
+		}
+		#a4 {
+			background: gold;
+			height: 100px;
+		}
+		#a5 {
+			background: red;
+		}
+		.b {
+			height: 50px;
+			width: 200px;
+			float: left;
+		}
+		.b1 {
+			background: cadetblue;
+		}
+		.b2 {
+			background: rebeccapurple;
+		}
+		body {
+			background: #aaa;
+		}
+	 	.w {
+			width: 300px;
+			height: 600px;
+			background: #fff;
+			border-left: 300px solid #000;
+			border-radius: 50%;
+			position: relative;
+		}
+		.w::after {
+			width: 300px;
+			height: 300px;
+			position: absolute;
+			left: -150px;
+			display: block;
+			z-index: 1;
+			background: red;
+			border-radius: 50%;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="w"></div>
+
+	<div id="a1"></div>
+	<div id="a2"></div>
+	<div id="a3"></div>
+	<div id="a4">
+		<div class="b1 b"></div>
+		<div class="b2 b"></div>
+		<div class="b2 b"></div>
+		<div class="b1 b"></div>
+	</div>
+	<div id="a5"></div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		#a {
+			width: 300px;
+			height: 300px;
+			border: 1px solid red;
+			padding: 10px;
+			text-align: center;
+		}
+		.a,.b,.c,.d,.e {
+			width: 100px;
+			height: 100px;
+			background: red;
+			text-align: center;
+			line-height: 100px;
+		}
+		.b {
+			position: relative;
+			right: -200px;
+			top: -100px;
+		}
+		.c {
+			position: relative;
+			right: -100px;
+			top: -100px;
+			background: blue;
+		}
+		.d {
+			position: relative;
+			top: -100px;
+		}
+		.e {
+			position: relative;
+			right: -200px;
+			top: -200px;
+		}
+		.a1 {
+			width: 100px;
+			height: 100px;
+			background: lightblue;
+			border: 1px solid;
+		}
+		.a2 {
+			width: 100px;
+			height: 100px;
+			background: lightblue;
+			position: relative;
+			border: 1px solid;
+			left: 50px;
+			top: -50px;
+		}
+		.a3 {
+			width: 100px;
+			height: 100px;
+			background: yellow;
+			position: relative;
+			border: 1px solid;
+			left: 100px;
+			top: -100px;
+		}
+		.a4 {
+			width: 100px;
+			height: 100px;
+			background: lightblue;
+			position: relative;
+			border: 1px solid;
+			left: 150px;
+			top: -150px;
+		}
+		.a5 {
+			width: 100px;
+			height: 100px;
+			background: lightblue;
+			position: relative;
+			border: 1px solid;
+			left: 200px;
+			top: -200px;
+		}
+		.b1, .b2 {
+			width: 50px;
+			height: 200px;
+			background: red;
+		}
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+		.page {
+			font-size: 0;
+			text-align: center;
+		}
+		.page a {
+			border:  1px #000 solid;
+			display: inline-block;
+			width: 25px;
+			height: 25px;
+			font-size: 16px;
+			text-align: center;
+			line-height: 25px;
+			margin-left: -1px;
+		}
+		.page .arr {
+			background: #ccc;
+		}
+		.act {
+			color: #fff;
+			background: #e00;
+			border-color: #e00;
+			position: relative;
+		}
+		span {
+			font-size: 16px;
+			margin-left: 7px;
+		}
+	</style>
+</head>
+<body>
+	<div id="a">
+		<div class="a">文字</div>
+		<div class="b">文字</div>
+		<div class="c">文字</div>
+		<div class="d">文字</div>
+		<div class="e">文字</div>
+	</div>
+	<div class="a1"></div>
+	<div class="a2"></div>
+	<div class="a3"></div>
+	<div class="a4"></div>
+	<div class="a5"></div>
+
+<!-- 	<div class="b1"></div>
+	<div class="b2"></div> -->
+
+<div class="page">
+	<a href="#" class="arr">&lt;</a>
+	<a href="#">1</a>
+	<a href="#">2</a>
+	<a href="#" class="act">3</a>
+	<a href="#">4</a>
+	<a href="#">5</a>
+	<a href="#">6</a>
+	<a href="#" class="arr">&gt;</a>
+	<span>共100页</span>
+</div>
+</body>
+</html>

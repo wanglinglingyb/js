@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		.box {
+			perspective: 1000px;
+			transform-style: preserve-3d;
+			margin: 0 auto;
+			border: 5px solid;
+			width: 100px;
+		}
+		.a {
+			width: 100px;
+			height: 100px;
+			background: red;
+			transform: rotateY(-50deg);
+			transition: 5s linear;
+			transform-origin: left;
+		}
+		.box:hover .a {
+			transform: rotateY(80deg);
+		}
+		.w {
+			perspective: 1500px;
+			transform-style: preserve-3d;
+			position: fixed;
+			/* top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%; */
+			/* background: #a03; */
+		}
+		.a1, .a2 {
+			width: 100px;
+			height: 100px;
+			font-size: 45px;
+			text-align: center;
+			line-height: 100px;
+			border: 5px dotted red;
+			transition: 5s;
+			backface-visibility: hidden;
+		}
+		.w:hover .a1 {
+			transform: rotateX(.5turn)
+		}
+		.w:hover .a2 {
+			transform: rotateX(0turn)
+		}
+		.a1 {
+			position: absolute;
+			background: #c0e;
+			transform: rotateX(0turn)
+		}
+		.a2 {
+			background: #aef;
+			transform: rotateX(.5turn)
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="a"></div>
+	</div>
+
+	<div class="w">
+		<div class="a1">正面</div>
+		<div class="a2">背面</div>
+	</div>
+</body>
+</html>

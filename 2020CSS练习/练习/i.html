@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		.a, .e {
+			width: 800px;
+			height: 100px;
+			background: purple;
+		}
+		.b {
+			width: 800px;
+			/* display: flex; 弹性盒子*/
+		}
+		.c {
+			width: 200px;
+			height: 500px;
+			background: gold;
+			position: absolute;
+			/* float: left; */
+		}
+		.d {
+			/* float: left; */
+			width: 600px;
+			height: 600px;
+			background: #acf;
+			/* position: absolute; */
+			top: 0;
+			margin-left: 200px;
+		}
+	/* 	.clearfix::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		@media (max-width: 1024px) {
+			.c {
+				display: none;
+			}
+			.d {
+				width: 100%;
+			}
+		} */
+	</style>
+</head>
+<body>
+	<div class="a"></div>
+	<div class="b clearfix">
+		<div class="c"></div>
+		<div class="d"></div>
+	</div>
+	<div class="e"></div>
+</body>
+</html>

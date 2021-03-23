@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		table,td,th {
+			border: 1px solid;
+		}
+		table {
+			border-collapse: collapse;
+		}
+		td,th {
+			padding: 10px;
+			text-align: center;
+		}
+		div {
+			padding: 10px;
+			margin: 10px;
+			border: 5px solid;
+		}
+		.aa {
+			border-color: red;
+			position: relative;
+			top: 100px;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<caption>标题</caption>
+		<tr>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+		</tr>
+		<!--tr*5>td*3{$$$}-->
+		<tr>
+			<td>101</td>
+			<td colspan="2">102</td>
+			<!-- <td>103</td> -->
+		</tr>
+		<tr>
+			<td colspan="2" rowspan="2">201</td>
+			<!-- <td>202</td> -->
+			<td>203</td>
+		</tr>
+		<tr>
+			<!-- <td>301</td>
+			<td>302</td> -->
+			<td>303</td>
+		</tr>
+		<tr>
+			<td>401</td>
+			<td rowspan="2">402</td>
+			<td>403</td>
+		</tr>
+		<tr>
+			<td>501</td>
+			<!-- <td>502</td> -->
+			<td>503</td>
+		</tr>
+	</table>
+	<div>手机上您爱干嘛干嘛，任何操作都不会影响收益，请放心~</div>
+	<div class="aa">手机上您爱干嘛干嘛，任何操作都不会影响收益，请放心~</div>
+	<div>手机上您爱干嘛干嘛，任何操作都不会影响收益，请放心~</div>
+</body>
+</html>
